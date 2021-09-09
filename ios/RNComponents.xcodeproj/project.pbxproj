@@ -37,6 +37,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNComponents/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNComponents/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-RNComponents-RNComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNComponents-RNComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-RNComponents-RNComponentsTests/Pods-RNComponents-RNComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		1ED3A9E226EA8214004F9709 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-RNComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-RNComponents-RNComponentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNComponents-RNComponentsTests.debug.xcconfig"; path = "Target Support Files/Pods-RNComponents-RNComponentsTests/Pods-RNComponents-RNComponentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNComponents/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +97,14 @@
 			name = RNComponents;
 			sourceTree = "<group>";
 		};
+		1E11099F26EA7FF0003E3490 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1ED3A9E226EA8214004F9709 /* Ionicons.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +125,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				1E11099F26EA7FF0003E3490 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* RNComponents */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNComponentsTests */,
@@ -496,7 +506,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNComponentsIsaac;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNComponentsIsaac2;
 				PRODUCT_NAME = RNComponents;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -522,7 +532,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNComponentsIsaac;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNComponentsIsaac2;
 				PRODUCT_NAME = RNComponents;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
