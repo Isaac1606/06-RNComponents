@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View} from 'react-native';
 import  Icon  from 'react-native-vector-icons/Ionicons';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { MenuItem } from '../interfaces/appInterfaces';
@@ -24,7 +24,7 @@ export const FlatListMenuItem = ({ menuItem }: Props) => {
                     color="gray"
                     size={ 17 }
                     style={{
-                        paddingTop: 2,
+                        paddingTop: Platform.OS === "android" ? 4 : 2,
                     }}
                 />
                 
