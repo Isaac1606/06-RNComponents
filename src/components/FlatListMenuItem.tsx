@@ -23,6 +23,9 @@ export const FlatListMenuItem = ({ menuItem }: Props) => {
                     name={ menuItem.icon }
                     color="gray"
                     size={ 17 }
+                    style={{
+                        marginTop: 4
+                    }}
                 />
                 
                 <Text style={styles.itemText}>{menuItem.name}</Text>
