@@ -27,7 +27,7 @@ export const TextInputScreen = () => {
                         <HeaderTitle title="TextInputs"/>
                         {/* Se debe definir estilos debido a que por defecto es transparente */}
                         <TextInput
-                            style={stylesScreen.inputStyle}
+                            style={{...stylesScreen.inputStyle, color:'black'}}
                             placeholder= "Nombre"
                             autoCorrect={ false }
                             autoCapitalize="words"
@@ -35,7 +35,7 @@ export const TextInputScreen = () => {
                             placeholderTextColor="grey"
                         />
                         <TextInput
-                            style={stylesScreen.inputStyle}
+                            style={{...stylesScreen.inputStyle, color:'black'}}
                             placeholder= "Email"
                             keyboardType="email-address"
                             autoCorrect={ false }
@@ -44,7 +44,7 @@ export const TextInputScreen = () => {
                             onChangeText={ value => handleInputChanges( value, 'email' )}
                         />
                         <TextInput
-                            style={stylesScreen.inputStyle}
+                           style={{...stylesScreen.inputStyle, color:'black'}}
                             keyboardType="phone-pad"
                             placeholder= "Télefono"
                             placeholderTextColor="grey"
