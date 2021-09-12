@@ -24,7 +24,7 @@ export const FlatListMenuItem = ({ menuItem }: Props) => {
                     color="gray"
                     size={ 17 }
                     style={{
-                        marginTop: 4
+                        paddingTop: 2,
                     }}
                 />
                 
