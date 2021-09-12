@@ -23,7 +23,7 @@ export const SwitchScreen = () => {
     return (
         <View style={{ marginHorizontal: 20 }}>
             
-            <HeaderTitle title="Switches" />
+            <HeaderTitle title="Switchs" />
 
             <View style={ styles.switchRow }>
                 <Text style={ styles.switchText }>isActive</Text>
