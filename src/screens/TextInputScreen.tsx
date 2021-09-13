@@ -1,5 +1,5 @@
 import React from 'react';
-import {Keyboard, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, TextInput, TouchableWithoutFeedback, View} from 'react-native';
+import {Keyboard, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View} from 'react-native';
 import { HeaderTitle } from '../components/HeaderTitle';
 import { styles } from '../theme/appTheme';
 import { useForm } from '../hooks/useForm';
@@ -51,7 +51,16 @@ export const TextInputScreen = () => {
                             onChangeText={ value => handleInputChanges(value, 'phone')}
                         />
 
-                        <CustomSwitch isOn={isSubscribed} onChange={ value => handleInputChanges( value , 'isSubscribed')} />
+                        <View
+                            style={{paddingHorizontal: 10, flexDirection: 'row', justifyContent:'space-between'}}
+                        >
+                            <Text
+                                style={{ fontSize:22}}
+                            >
+                                Suscribed: 
+                            </Text>
+                            <CustomSwitch isOn={isSubscribed} onChange={ value => handleInputChanges( value , 'isSubscribed')} />   
+                        </View>
                         
                         <HeaderTitle title={ JSON.stringify( inputValues, null, 3 ) }/>
 

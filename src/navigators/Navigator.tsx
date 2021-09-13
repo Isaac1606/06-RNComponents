@@ -6,22 +6,32 @@ import { Animation102Screen } from '../screens/Animation102Screen';
 import { SwitchScreen } from '../screens/SwitchScreen';
 import { AlertScreen } from '../screens/AlertScreen';
 import { TextInputScreen } from '../screens/TextInputScreen';
+import { PullToRefreshScreen } from '../screens/PullToRefreshScreen';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { StatusBar } from 'react-native';
 
 const Stack = createStackNavigator();
 
 export const Navigator = () => {
+  const { top:marginTop } = useSafeAreaInsets();
+  
   return (
     <Stack.Navigator
         screenOptions={{
-            headerShown: false
+            headerShown: false,
+            cardStyle: {
+              backgroundColor: 'white',
+              marginTop: marginTop + 10,
+            },
         }}
-    >
+    > 
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Animation101Screen" component={Animation101Screen} />
       <Stack.Screen name="Animation102Screen" component={Animation102Screen} />
       <Stack.Screen name="SwitchScreen" component={SwitchScreen} />
       <Stack.Screen name="AlertScreen" component={AlertScreen} />
       <Stack.Screen name="TextInputScreen" component={TextInputScreen} />
+      <Stack.Screen name="PullToRefreshScreen" component={PullToRefreshScreen} />
     </Stack.Navigator>
   );
 }

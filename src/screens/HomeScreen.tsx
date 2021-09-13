@@ -32,6 +32,7 @@ export const HomeScreen = () => {
                 keyExtractor={ (item) => item.name }
                 ListHeaderComponent={ () => <HeaderTitle title="Opciones de Menu"/> }
                 ItemSeparatorComponent = {itemSeparator}
+                scrollEnabled={false}
             />
         </View>
     )

@@ -9,10 +9,9 @@ interface Props {
 
 export const HeaderTitle = ( { title } : Props) => {
 
-    const { top } = useSafeAreaInsets();
     return (
         <View
-            style={{ marginTop: top + 10, marginBottom: 20 }}
+            style={{ marginBottom: 20 }}
         >
             <Text style={ styles.title }>
                 { title }            
