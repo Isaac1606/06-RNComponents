@@ -9,8 +9,8 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <StatusBar
-        backgroundColor='black'
-        barStyle='dark-content'
+        // backgroundColor='black'
+        // barStyle='dark-content'
       />
       <NavigationContainer>
           <Navigator />

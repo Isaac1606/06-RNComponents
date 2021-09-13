@@ -8,7 +8,6 @@ import { AlertScreen } from '../screens/AlertScreen';
 import { TextInputScreen } from '../screens/TextInputScreen';
 import { PullToRefreshScreen } from '../screens/PullToRefreshScreen';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { StatusBar } from 'react-native';
 
 const Stack = createStackNavigator();
 
@@ -21,7 +20,8 @@ export const Navigator = () => {
             headerShown: false,
             cardStyle: {
               backgroundColor: 'white',
-              marginTop: marginTop + 10,
+              marginTop: marginTop ,
+              paddingTop: 15
             },
         }}
     > 
