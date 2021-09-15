@@ -8,6 +8,8 @@ import { AlertScreen } from '../screens/AlertScreen';
 import { TextInputScreen } from '../screens/TextInputScreen';
 import { PullToRefreshScreen } from '../screens/PullToRefreshScreen';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { CustomSectionListScreen } from '../screens/CustomSectionListScreen';
+import { ModalScreen } from '../screens/ModalScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,8 +22,7 @@ export const Navigator = () => {
             headerShown: false,
             cardStyle: {
               backgroundColor: 'white',
-              marginTop: marginTop ,
-              paddingTop: 15
+              marginTop
             },
         }}
     > 
@@ -32,6 +33,8 @@ export const Navigator = () => {
       <Stack.Screen name="AlertScreen" component={AlertScreen} />
       <Stack.Screen name="TextInputScreen" component={TextInputScreen} />
       <Stack.Screen name="PullToRefreshScreen" component={PullToRefreshScreen} />
+      <Stack.Screen name="CustomSectionListScreen" component={CustomSectionListScreen} />
+      <Stack.Screen name="ModalScreen" component={ModalScreen} />
     </Stack.Navigator>
   );
 }

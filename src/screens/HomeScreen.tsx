@@ -2,24 +2,11 @@ import React from 'react';
 import { View, FlatList} from 'react-native';
 import { FlatListMenuItem } from '../components/FlatListMenuItem';
 import { HeaderTitle } from '../components/HeaderTitle';
+import { ItemSeparator } from '../components/ItemSeparator';
 import { menuItems } from '../data/menuItems';
 import { styles } from '../theme/appTheme';
 
 export const HomeScreen = () => {
-
-    // Componente que fungirá como Separador entre los elementos de la FlatList
-    const itemSeparator = () => {
-        return (
-            <View
-                style={{ 
-                    borderBottomWidth: 1,
-                    opacity: 0.4,
-                    marginVertical: 5
-                }}
-            >
-            </View>
-        );
-    }
 
     return (
         <View
@@ -30,7 +17,7 @@ export const HomeScreen = () => {
                 renderItem={ ({ item, index }) => <FlatListMenuItem menuItem={ item }/>}
                 keyExtractor={ (item) => item.name }
                 ListHeaderComponent={ () => <HeaderTitle title="Opciones de Menu"/> }
-                ItemSeparatorComponent = {itemSeparator}
+                ItemSeparatorComponent = {() => <ItemSeparator/>}
                 scrollEnabled={false}
             />
         </View>
