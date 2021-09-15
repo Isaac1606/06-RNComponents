@@ -52,7 +52,7 @@ export const ModalScreen = () => {
                         }}
                     >
                         <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Modal</Text>
-                            <Text style={{ fontSize: 16, fontWeight: '300' }}>Cuerpo del Modal</Text>
+                            <Text style={{ fontSize: 16, fontWeight: '300', marginBottom:30 }}>Cuerpo del Modal</Text>
                             <Button
                                 title="Cerrar"
                                 onPress={ () => { setIsVisible(false) }}
